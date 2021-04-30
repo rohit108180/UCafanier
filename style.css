@@ -465,7 +465,7 @@ header {
 }
 .cart-total-bar {
   display: flex;
-  width: 92%;
+  width: 80%;
   font-family: "Ubuntu Mono", monospace;
   margin-top: 10px;
   justify-content: space-between;
