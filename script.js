@@ -1,4 +1,4 @@
-// alert(' This website only contains three pages for now Homepage, Login-page and Cart-part. For now you can only add items from Home-page to your Cart')
+alert(' This website only contains three pages for now Homepage, Login-page and Cart-part. For now you can only add items from Home-page to your Cart')
 
 //*********** HOMEPAGE***************//
 
