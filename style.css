@@ -465,7 +465,7 @@ header {
 }
 .cart-total-bar {
   display: flex;
-  width: 80%;
+  width: 93%;
   font-family: "Ubuntu Mono", monospace;
   margin-top: 10px;
   justify-content: space-between;
@@ -819,6 +819,13 @@ header {
     border-top-right-radius: 0px;
     border-bottom-left-radius: 13px;
   }
+  .cart-total-bar {
+  display: flex;
+  width: 80%;
+  font-family: "Ubuntu Mono", monospace;
+  margin-top: 10px;
+  justify-content: space-between;
+}
 }
 
 @media( max-width : 550px){
@@ -834,4 +841,11 @@ header {
   .cartbox ul {
     padding-right:20px
   }
+  .cart-total-bar {
+  display: flex;
+  width: 70%;
+  font-family: "Ubuntu Mono", monospace;
+  margin-top: 10px;
+  justify-content: space-between;
+}
 }
