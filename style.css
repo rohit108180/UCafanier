@@ -1,5 +1,5 @@
 html {
-  font-size: 2.5vh;
+  font-size: 75.5%;
 }
 :root {
   --text-color: #e0e0e0;
@@ -22,7 +22,7 @@ body {
   display: block;
   margin: 0px;
   padding: 0px;
-  background: url(/1.jpg) no-repeat center center/cover;
+  background: url(/img/1.jpg) no-repeat center center/cover;
   /* position:fixed; */
   background-attachment: fixed;
   /* background-repeat: no-repeat; */
@@ -626,7 +626,7 @@ header {
   width: 50vw;
   height: 89.5vh;
   opacity: 0.89;
-  background: url(/login-2.jpg) center center/cover;
+  background: url(/img/login-2.jpg) center center/cover;
   z-index: -1;
   border-top-left-radius: 23px;
   border-bottom-left-radius: 23px;

@@ -25,14 +25,14 @@ let product_prices = [
 ];
 
 let product_imgs = [
-  "/canon.jpg",
-  "/Mask.jpg",
-  "/laptop.jpg",
-  "/Apple.jpg",
-  "/AC.jpg",
-  "/611YswQRgfL._SL1400_.jpg",
-  "/window Ac.jpg",
-  "/Headphones.jpg",
+  "/img/canon.jpg",
+  "/img/Mask.jpg",
+  "/img/laptop.jpg",
+  "/img/Apple.jpg",
+  "/img/AC.jpg",
+  "/img/611YswQRgfL._SL1400_.jpg",
+  "/img/window Ac.jpg",
+  "/img/Headphones.jpg",
 ];
 
 let homepage = document.getElementById("homepage");
