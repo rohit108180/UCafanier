@@ -349,7 +349,7 @@ header {
   /* background-color: #3c415c; */
   border-radius: 10px;
   margin: 5px;
-  justify-content: space-around;
+  justify-content: space-between;
   transition-property: border;
   transition-duration: 0.3s;
   padding: 5px 10px;
@@ -403,19 +403,23 @@ header {
 
 
 
-.cart-item-price,
-.cart-item-total-price {
+
+.cart-item-price {
   color: var(--cartpage-color);
   /* border: 2px solid black; */
   display: flex;
   width: 6.62rem;
-  justify-content: center;
+  justify-content: c;
   align-items: center;
   font-size: 1.5rem;
   text-shadow: 2px 2.5px black;
 }
+.cart-item-total-price{
+  display: none;
+}
 
 .cartbox .cart-item-qty {
+  display: none;
   /* color: var(--cartpage-color); */
   /* grid-area: quantity; */
   height: 30px;
