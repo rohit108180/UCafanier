@@ -35,6 +35,7 @@ let product_imgs = [
   "/img/Headphones.jpg",
 ];
 
+const product_cart = document.querySelectorAll(".product-cart");
 const homepage = document.getElementById("homepage");
 const login_page_btn = document.getElementById("homepage-login-btn");
 const login_page = document.querySelector("#login-page");
@@ -47,7 +48,7 @@ let cart_item_prices = [];
 let cart_item_total_prices = [];
 let cart_item_imgs = [];
 
-const product_cart = document.querySelectorAll(".product-cart");
+
 
 function displayCartPage() {
   homepage.classList.add("hidden");
@@ -78,7 +79,6 @@ function updateCartPage() {
     let cart_total_amt = document.querySelector(
       ".cart-total-amt .cart_price_num"
     );
-    let quantity = document.querySelectorAll(".cart-item-qty")[j];
     
 
     // updating prduct info and prices for items added into the cart page
@@ -87,13 +87,10 @@ function updateCartPage() {
     cart_item_img.src = cart_item_imgs[j];
     cart_item_name.innerHTML = cart_item_names[j];
 
+  
     // upadating cart item total based on the quantity
     
-    quantity.onchange = function (){
-      console.log("Changed");
-      
-      cart_item_total_prices[j] = quantity.value*cart_item_prices[j];
-    }();
+   
 
     //updating total amount to be paid 
     let temp = 0;
@@ -168,6 +165,26 @@ add_data_id_att(no_of_products, product_cart);
 // functioning cartpage login button
 
 let cartpage_login_btn = document.querySelector("#cartpage .login ");
+
+
+//functioning login page apply button
+
+// for (let[j = 0;[j < no_of_cart_items;[j++) {
+//   console.log("apply");
+  
+//   const quantity = document.querySelectorAll(".cart-item-qty")[j];
+//   const apply = document.querySelectorAll(".cart-item-qty-apply")[j];
+//   apply.addEventListener('click', function (){
+//     console.log("Changed");
+    
+//     cart_item_total_prices[j] = quantity.value*cart_item_prices[j];
+//   });
+
+//   updateCartPage();
+
+// }
+
+
 
 // thisfunction is used in
 // function Update_total() {
