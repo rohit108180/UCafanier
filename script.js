@@ -42,6 +42,11 @@ const login_page = document.querySelector("#login-page");
 const cart_page_btn = document.getElementById("cartpage-btn");
 const cartpage = document.querySelector("#cartpage");
 
+const contactUsPage = document.querySelector('#contact-us-page');
+const aboutUsPage = document.querySelector('#about-us-page');
+const overlay = document.querySelector('.overlay');
+
+
 let no_of_cart_items = 0;
 let cart_item_names = [];
 let cart_item_prices = [];
@@ -54,17 +59,32 @@ function displayCartPage() {
   homepage.classList.add("hidden");
   login_page.classList.add("hidden");
   cartpage.classList.remove("hidden");
+  overlay.classList.add("hidden");
 }
 function displayloginPage() {
   homepage.classList.add("hidden");
   cartpage.classList.add("hidden");
   login_page.classList.remove("hidden");
+  overlay.classList.add("hidden");
 }
 function displayHomePage() {
   homepage.classList.remove("hidden");
   cartpage.classList.add("hidden");
   login_page.classList.add("hidden");
+  overlay.classList.add("hidden");
 }
+function displayContactUs() {
+  contactUsPage.classList.remove("hidden");
+  overlay.classList.remove("hidden");
+
+}
+function displayAboutUs() {
+  overlay.classList.remove("hidden");
+  aboutUsPage.classList.remove("hidden");
+
+}
+
+
 
 function updateCartPage() {
   for (let j = 0; j < no_of_cart_items; j++) {
@@ -197,11 +217,50 @@ let cartpage_login_btn = document.querySelector("#cartpage .login ");
 
 //
 // }
+
+//cart page login btn functionality
 cartpage_login_btn.addEventListener("click", displayloginPage);
 
+//cart page add more btn functionality
 document
   .querySelector(".cart-add-more")
   .addEventListener("click", displayHomePage);
+
+// functioning navigation barr btns 
+for(let i = 0; i < 2; i++){
+  const contactUs = document.querySelectorAll(".contact-us")[i];
+  const AboutUs = document.querySelectorAll(".about")[i];
+  const home = document.querySelectorAll(".home")[i];
+
+  contactUs.addEventListener('click', displayContactUs);
+  AboutUs.addEventListener('click', displayAboutUs);
+  home.addEventListener('click', displayHomePage);
+};
+
+
+
+// Functioning close btn in the modal window
+
+const closeBtn = document.querySelectorAll(".close-btn"); 
+for(let i = 0; i < closeBtn.length; i++){
+  closeBtn[i].addEventListener('click', function(){
+    overlay.classList.add("hidden");
+    contactUsPage.classList.add("hidden");
+    aboutUsPage.classList.add("hidden");
+  })
+
+};
+
+
+// Functioning overlay closing property
+
+overlay.addEventListener('click', function(){
+  overlay.classList.add("hidden");
+  contactUsPage.classList.add("hidden");
+  aboutUsPage.classList.add("hidden");
+});
+
+
 
 //*********** practice***************//
 
